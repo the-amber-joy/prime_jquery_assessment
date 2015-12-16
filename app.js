@@ -11,7 +11,7 @@ $(document).ready(function() {
 function buildContainer(){
 	$el = $(this).parent()
 	$el.append('<div class="container">' + 
-		'<button class="delete">delete</button><br><p>' + 
+		'<button class="delete">delete</button><br>' + 
 		clickCount + 
 		'<br><button class="change">change</change>' + 
 		'</div>');
@@ -24,7 +24,7 @@ function countClicks(){
 
 
 function changeColor(){
-	$(this).closest('.container').toggleClass('red');
+	$(this).parent().toggleClass('red');
 }
 
 
