@@ -24,11 +24,10 @@ function countClicks(){
 
 
 function changeColor(){
-	$(this).parent().parent().toggleClass('red');
+	$(this).closest('.container').toggleClass('red');
 }
 
 
 function deleteRow(){
 	$(this).parent().remove();
 }
-
